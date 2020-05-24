@@ -88,7 +88,7 @@ hr {
 .intro__suptitle {
     margin-bottom: 20px;
 
-    font-family: 'Kaushan Script', cursive;
+    font-family:  cursive;
     font-size: 72px;
     color: #fff;
 }
@@ -109,7 +109,7 @@ hr {
 .header.fixed {
     padding: 10px 0;
 
-    background-color: #eb8b8d;
+    background-color: #000000;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 
     position: fixed;
@@ -121,7 +121,7 @@ hr {
 }
 
 .header.active {
-    background-color: #eb8b8d;
+    background-color: #696969;
 }
 
 .header__inner {
@@ -288,57 +288,6 @@ hr {
 
 
 
-/* Slider */
-.slider {
-    width: 100%;
-
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-}
-
-.slider__inner {
-    display: flex;
-    justify-content: space-between;
-}
-
-.slider__item {
-    width: 23%;
-    padding: 20px 0;
-    position: relative;
-
-    border-top: 3px solid #fff;
-    opacity: .7;
-
-    font-size: 18px;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.slider__item.active {
-    opacity: 1;
-}
-
-.slider__item.active:before {
-    content: "";
-    display: block;
-    width: 70px;
-    height: 3px;
-
-    background-color: #f38181;
-
-    position: absolute;
-    top: -3px;
-    left: 0;
-    z-index: 1;
-}
-
-.slider__num {
-    font-size: 24px;
-    font-weight: 700;
-}
-
 
 /* Section */
 .section {
@@ -402,7 +351,7 @@ hr {
 
 .section__text {
     font-size: 15px;
-    color: #999;
+    color: #000000;
 }
 
 
@@ -528,30 +477,9 @@ hr {
 
 .services__text {
     font-size: 15px;
-    color: #999;
+    color: #000000;
 }
 
-/* Devices */
-
-.devices {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.devices__item {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.devices__item--iphone {
-    position: absolute;
-    bottom: -80px;
-    right: 0;
-    z-index: 1;
-}
 
 
 
@@ -724,7 +652,7 @@ hr {
 
 .blog__text {
     font-size: 15px;
-    color: #999;
+    color: #000000;
 }
 
 .blog__footer {
@@ -751,7 +679,6 @@ hr {
 
 /* Footer */
 .footer {
-    padding-top: 65px;
 
     background-color: #f8f8f8;
 }
@@ -885,23 +812,7 @@ hr {
         font-size: 80px;
     }
 
-    /* Stat */
-    .stat {
-       justify-content: center;
-    }
-
-    .stat__item {
-        flex: none;
-        width: 33.33333%;
-        padding-top: 30px;
-        padding-bottom: 30px;
-
-        border: 0;
-    }
-
-    .stat__item:last-child {
-        border-right: 0;
-    }
+    
 
     /* Services */
     .services__item {
@@ -1104,17 +1015,6 @@ hr {
         margin: 20px auto;
     }
 
-    
-    /* Devices */
-    .devices {
-        max-width: 320px;
-    }
-
-    .devices__item--iphone {
-        width: 180px;
-        bottom: -50px;
-        right: -80px;
-    }
 
 
     /* Reviews */
