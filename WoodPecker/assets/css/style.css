@@ -298,13 +298,13 @@ hr {
     margin-bottom: 40px;
     padding-bottom: 0;
 
-    background: url("../images/heeeed/3.jpg") center no-repeat;
+    background: url("../images/heeeed/2.jpg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
 
 .section--gray {
-   background: url(../images/heeeed/3.jpg);
+   background: url(../images/heeeed/2.jpg);
 }
 
 .section--clients {
