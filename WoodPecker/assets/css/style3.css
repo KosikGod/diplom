@@ -669,12 +669,12 @@ textarea.input1 + .shadow_input1 {
 
 .contact1_form_btn {
   min-width: 193px;
-  height: 50px;
+  height: 40px;
   border-radius: 25px;
-  background: #57b846;
+  background: #000000;
   font-family: Montserrat-Bold;
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 2.5;
   color: #fff;
   display: -webkit-box;
   display: -webkit-flex;

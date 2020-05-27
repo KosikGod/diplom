@@ -172,7 +172,7 @@ hr {
 }
 
 .nav__link:hover {
-    color: #000000;
+    color: #fff;
 }
 
 .nav__link:hover:after,
