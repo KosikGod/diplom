@@ -1,24 +1,21 @@
-if (trim($_POST['mfbPhone']) == '') {
-echo 'false';
-}
-else {
-$txtname = trim($_POST['mfbName']);
-$txtemail = trim($_POST['mfbMail']);
-$txtphone = trim($_POST['mfbPhone']);
+document.addEventListener('DOMContentLoader', ()=> {
 
-// от кого
-$fromMail = 'test@test.ru';
-// Сюда введите Ваш email
-$emailTo = 'tresmob@gmail.com';
+    let toTopBtm = document.querySelector('.to-up');
+    
+    window.onscroll = function(){
+        if(window.pageYOffset>580){
+            toTopBtm.style.display = 'block'}
+            else{
+                toTopBtm.style.display = 'none'
+            }
+    }
+    
+    toTopBtm.addEventListener('click', function(){
+        window.scrollBy({
+            top: -document.documentElement.scrollHeight,
+            behavior: 'smooth'
+        });
+   });     
+    
+ });   
 
-$subject = 'Обратная связь';
-$subject = "=?utf-8?b?". base64_encode($subject) ."?=";
-$headers = "From: Пример формы<$fromMail>\n";
-$headers .= 'Content-type: text/plain; charset="utf-8"\r\n';
-$headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Date: ". date('D, d M Y h:i:s O') ."\r\n";
-// тело письма
-$body = "Получено письмо с сайта ".$site." \n\nИмя: ".$txtname."\nТелефон: ".$txtphone."\ne-mail: ".$txtemail."\nСообщение: ".$txtmessage;
-mail($emailTo, $subject, $body, $headers );
-echo 'ok';
-}

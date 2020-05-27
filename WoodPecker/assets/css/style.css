@@ -38,7 +38,7 @@ hr {
 .container {
     width: 100%;
     max-width: 1230px;
-    padding: 0 15px;
+   
     margin: 0 auto;
 }
 
@@ -109,7 +109,7 @@ hr {
 .header.fixed {
     padding: 10px 0;
 
-    background-color: #000000;
+    background-color: #696969;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 
     position: fixed;
@@ -161,7 +161,7 @@ hr {
     width: 100%;
     height: 3px;
 
-    background-color: chocolate;
+    background-color: #808080;
     opacity: 0;
 
     position: absolute;
@@ -173,7 +173,7 @@ hr {
 }
 
 .nav__link:hover {
-    color: crimson;
+    color: #fff;
 }
 
 .nav__link:hover:after,
@@ -781,8 +781,15 @@ hr {
     color: #f38181;
 }
 
-
-
+.to-up{
+    position: fixed;
+    bottom: 28px;
+    right: 29px;
+    display: none;
+    z-index: 22;
+    cursor: pointer;
+}
+ 
 
 @media (max-width: 1230px) {
 
@@ -872,7 +879,7 @@ hr {
         top: 100%;
         left: 0;
 
-        background-color: #eb8b8d;
+        background-color: #696969;
     }
 
     .nav.active {
